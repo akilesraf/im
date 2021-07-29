@@ -1,0 +1,19 @@
+{{clientes}}
+
+<ul>
+{% for informes in clientes.informes_set.all %}
+    <li>{{ informes.informes_text }}</li>
+{% endfor %}
+</ul>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+<form action="{% url 'erp:vote' clientes.id %}" method="post">
+{% csrf_token %}
+{% for informes in clientes.informes_set.all %}
+    <input type="radio" name="informes" id="informes{{ forloop.counter }}" value="{{ informes.id }}">
+    <label for="informes{{ forloop.counter }}">{{ informes.choice_text }}</label><br>
+{% endfor %}
+<input type="submit" value="Vote">
+</form>

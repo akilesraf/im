@@ -1,0 +1,70 @@
+li a {
+    color: rgb(11, 27, 247);
+    text-align: center;
+}
+
+
+
+
+h1  {
+    text-align: center;
+    color: rgb(22, 7, 228);
+    
+}
+h2 {
+    text-align: center
+}
+a:-webkit-any-link {
+    color: rgb(41, 5, 173);
+    
+    
+    
+}
+p{ 
+    color: red
+
+
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 10px;
+    border-width: 3px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0em;
+    font: 800 28.3333px Arial;
+}
+
+
+
+  
+button {
+          background-color: whitesmoke;
+          color: rgb(45, 9, 248);
+          width: 275px;
+          padding: 20px;
+          box-align: center;
+          
+          border-radius: 5px;
+}
+  
+
+
+
+

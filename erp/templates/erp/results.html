@@ -1,0 +1,9 @@
+<h1>{{ clientes.clientes_text }}</h1>
+
+<ul>
+{% for informes in clientes.informes_set.all %}
+    <li>{{ informes.informes_text }} -- {{ informes.votes }} vote{{ informes.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'erp:detail' clientes.id %}">Vote again?</a>
